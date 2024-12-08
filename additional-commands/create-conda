@@ -1,0 +1,9 @@
+module load anaconda3
+conda create --name htseq
+conda init
+
+-- restart shell by logging off HPC --
+
+module load anaconda3
+conda activate htseq
+conda install -c bioconda htseq
