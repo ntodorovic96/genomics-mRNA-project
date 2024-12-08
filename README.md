@@ -22,7 +22,7 @@ WTC2_1.fq.gz, WTC2_2.fq.gz
 The naming conventions are as follows: A/B/C correspond to biological replicates, A1/B1/C1 are from the Thiamine-present group, A2/B2/C2 are from the Thiamine-absent group, and _1,_2 are matched read pairs. 
 
 # Trimming and Data Cleaning
-The FastQ data was processed by running it through FastQC to guide the subsequent trimming strategy. Afterwards, Trimmimotatic was used to remove any adapter content, remove the first 15 bases, eliminate trailing bases with a low quality score, remove potential reads with low average quality socres and remove any reads that were less than 75 basepairs. This processed data was ran through FastQC to analyze results of the trimming.
+The FastQ data was processed by initially running it through FastQC to guide the subsequent trimming strategy. Afterwards, Trimmimotatic was used to remove any adapter content, remove the first 15 bases, eliminate trailing bases with a low quality score, remove potential reads with low average quality socres and remove any reads that were less than 75 basepairs. The processed data was then again ran through FastQC to analyze results of the trimming.
 
 # Reference Genome Mapping
 To map RNAseq reads, we utilized a reference genome downloaded from NCBI (GCF_000182965.3). This reference genome was indexed using Bowtie2 to generate an indexed map, and then aligned against that map.
