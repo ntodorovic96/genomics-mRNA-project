@@ -1,0 +1,17 @@
+NAME,Alignment file (.sam) ,# cleaned reads after trimmomatic,# read pairs detected by bowtie2,% aligned concordantly exactly 1 time,% aligned concordantly >1 time,overall alignment rate
+Andrea,,,,,,
+Gio,,,,,,
+Eliza,WTC2.sam,19434301,19434301,89.12%,5.91%,98.07%
+Nick,WTC2.sam,19434301,19434301,89.12%,5.91%,98.07%
+Matthew,WTA2.sam,21012870,21012870,88.51%,7.22%,98.45%
+Ethan,WTA1.sam,"20,171,629","20,171,629",88.31%,6.87%,98.07%
+Danielle,WTC1.sam,19924384,19924384,89.25%,6.05%,98.20%
+Juliet,WTB2.sam,19476343,19476343,89.04%,6.13%,98.11%
+Delfina,WTB1.sam,19802180,19802180,89.03%,6.25%,97.97%
+Hadley,WTA2.sam,21012870,21012870,88.51%,7.22%,98.45%
+Meghan,WTA1.sam,20171629,20171629,88.31%,6.87%,98.07%
+Grace,WTA2.sam,21037734,21037734,88.79%,7.15%,98.39%
+Jack,WTC1.sam,19901616,19901616,89.07%,6.06%,98.29%
+James,WTB2,19476343,19476343,89.04%,6.13%,98.11%
+,,,,,,
+,,,,,, 
