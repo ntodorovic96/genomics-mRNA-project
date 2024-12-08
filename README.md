@@ -37,4 +37,3 @@ Finally, the SAM file was converted into a binary alignment map (BAM) file WTC2.
 After mapping the reads to a BAM file with a reference genome, the python program HTSeq was used to count the reads. To begin, a Conda virtual environment (VE) was set up with all of the dependencies and necessary packages to run HTSeq (main/additional-commands/create-conda). Subsequently, HTSeq was run in the conda VE, using the WTC2.srt.bam sorted BAM file, and GCF_000182965.3_ASM18296v3_genomic.gtf GTF file as inputs (main/scripts/htseq.SBATCH). The generated output file was the text file WTC2_htseq-count.txt.
 
 # Differential Expression Analysis
-
