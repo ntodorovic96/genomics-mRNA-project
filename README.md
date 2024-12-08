@@ -39,6 +39,9 @@ After mapping the reads to a BAM file with a reference genome, the python progra
 # Differential Expression Analysis
 All of the 6 HTseq read count files from each biological replicate in thiamine-present and thiamine absent conditions (WTA2_htseqCount, WTB2_htseqCount, WTC2_htseqCount, WTA1_htseqCount, WTB1_htseqCount, WTC1_htseqCount) were then inputted into a DESeq R script (main/scripts/DESeq_script.R).
 
-DESeq made a dataset from all the HTseq count data and filtered for the relevant genes with more than 10 reads across samples (main/spreadsheets/calb_TH-_v_TH+_allgenes.csv). The reference condition to base the fold change in the differential expression analysis was set to the thiamine-present condition, and each experimental group and replicate was separated based on two principle components into a principle component analysis (PCA) plot. Finally, the data was filtered down further to a set of differentially expressed genes with at least 2-fold increase in expression and an adjusted p-value of less than 0.05 (main/spreadsheets/signif_TH-vTH+_wnames.csv). These genes were then graphed on a volcano plot. 
+DESeq made a dataset from all the HTseq count data and filtered for the relevant genes with more than 10 reads across samples (main/spreadsheets/calb_TH-_v_TH+_allgenes.csv). The reference condition to base the fold change in the differential expression analysis was set to the thiamine-present condition, and each experimental group and replicate was separated based on two principle components into a principle component analysis (PCA) plot. Finally, the data was filtered down further to a set of differentially expressed genes (DEGs) with at least 2-fold increase in expression and an adjusted p-value of less than 0.05 (main/spreadsheets/signif_TH-vTH+_wnames.csv). This subset of DEGs were graphed on a volcano plot.
 
 # Results
+The pre-cleaning for genes that had at least ten reads across samples resulted in the identification of 6,072 potential gene candidates.
+![TH-vTH+_pcaplot](https://github.com/user-attachments/assets/a82174d6-d051-4e7a-8a67-f4b7109a18d5)
+
