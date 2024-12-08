@@ -1,0 +1,1 @@
+samtools view -S -b sample.sam > sample.bam
