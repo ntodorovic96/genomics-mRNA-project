@@ -41,7 +41,15 @@ All of the 6 HTseq read count files from each biological replicate in thiamine-p
 
 DESeq made a dataset from all the HTseq count data and filtered for the relevant genes with more than 10 reads across samples (main/spreadsheets/calb_TH-_v_TH+_allgenes.csv). The reference condition to base the fold change in the differential expression analysis was set to the thiamine-present condition, and each experimental group and replicate was separated based on two principle components into a principle component analysis (PCA) plot. Finally, the data was filtered down further to a set of differentially expressed genes (DEGs) with at least 2-fold increase in expression and an adjusted p-value of less than 0.05 (main/spreadsheets/signif_TH-vTH+_wnames.csv). This subset of DEGs were graphed on a volcano plot.
 
-# Results
+# Results of DEG Analysis
 The pre-cleaning for genes that had at least ten reads across samples resulted in the identification of 6,072 potential gene candidates.
+
 ![TH-vTH+_pcaplot](https://github.com/user-attachments/assets/a82174d6-d051-4e7a-8a67-f4b7109a18d5)
 
+Using these candidate genes and their expression levels, each biological replicate and treatment group was separated based on two principle components. Principle Component 1 (PC1) accounted for 88% of the observed variance, while Principle Component 2 (PC2) accounted for 9% of the observed variance, leaving only 3% of the variance unaccounted for on the PCA plot. 
+
+The treatment conditions were very well separated based on PC2, with all of the thiamine-absent samples scoring very low at a -10, while all of the thiamine-present samples all scored highly around a +10, indicating some differential expression of genes based on the conditions of thiamine in the environment. On the other hand, PC1 separated all of the biological replicates, with two scoring high in each experimental group and one scoring low. 
+
+[R_volcano_plot_correct.pdf](https://github.com/user-attachments/files/18054382/R_volcano_plot_correct.pdf)
+
+Following the filtering down of candidates based on a combination of p-score and fold change criteria, 13 DEGs were identified in thiamine-absent conditions. 
