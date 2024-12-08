@@ -29,5 +29,9 @@ To resolve these issues, Trimmimotatic was used to remove any adapter content, r
 # Reference Genome Mapping
 To map the RNAseq reads, we utilized a _C. Albicans_ reference genome downloaded from NCBI (GCF_000182965.3). The fasta file used from this genome assembly was GCF_000182965.3_ASM18296v3_genomic.fna and the annotation file used was GCF_000182965.3_ASM18296v3_genomic.gtf.
 
-Using Bowtie-2, the fasta reference genome file was indexed to generate an indexed map (no script used here, simply bowtie2-build _reference-genome_ _index_). Once the indexed map was generated, Bowtie-2 was used to map the trimmed reads against the reference genome (main/scripts/bt2.SBATCH). The input files into the script were the trimmed paired-end reads WTC2_1.trPE.fq.gz and WTC2_2.trPE.fq.gz, and the indexed reference genome ref_gen_index. The output of this alignment was the sequence alignment map (SAM) file WTC2.sam. Out of the 19,434,301 reads, all of them were detected and 98.07% were aligned (main/spreadsheets/bowtie_alignments.csv). Additionally, 89.12% of the reads were aligned exactly 1 time, while 5.91% were aligned more than once. 
+Using Bowtie-2, the fasta reference genome file was indexed to generate an indexed map (main/additional-commands/bt2-build). Once the indexed map was generated, Bowtie-2 was used to map the trimmed reads against the reference genome (main/scripts/bt2.SBATCH). The input files into the script were the trimmed paired-end reads WTC2_1.trPE.fq.gz and WTC2_2.trPE.fq.gz, and the indexed reference genome ref_gen_index. The output of this alignment was the sequence alignment map (SAM) file WTC2.sam. Out of the 19,434,301 reads, all of them were detected and 98.07% were aligned (main/spreadsheets/bowtie_alignments.csv). Additionally, 89.12% of the reads were aligned exactly 1 time, while 5.91% were aligned more than once. 
+
+Finally, the SAM file was converted into a binary alignment map (BAM) file WTC2.bam (main/additional-commands/bam_conversion) and sorted as well as indexed (main/additional-commands/bam-srt). 
+
+# HTSeq and Differential Expression Analysis
 
