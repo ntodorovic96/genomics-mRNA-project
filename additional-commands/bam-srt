@@ -1,0 +1,2 @@
+samtools sort WTC2.bam –o WTC2.srt.bam
+samtools index WTC2.srt.bam
