@@ -1,0 +1,30 @@
+"NOTE: Each person should make two entries to the table, one for the forward reads (WT**_1.fq.gz) and one for the reverse reads file (WT**_2.fq.gz). For columns D-I, please enter ""G"" = looks good, ""M"" = potentially problematic, ""B"" =definitely problematic.",,,,,,,,,,
+NAME,FILE ,# reads before cleaning,# reads AFTER cleaning,% retained after cleaning,per-base sequence quality AFTER cleaning,per-base sequence content before cleaning,per-base sequence content AFTER cleaning,sequence duplication before cleaning,sequence duplication AFTER cleaning,Did minor adaptor contamination go away AFTER cleaning(Y/N)?
+Eliza,WTC2_1.fq.gz,20407694,19434301,0.9523026462,G,B,G,B,B,Y
+Eliza,WTC2_2.fq.gz,20407694,19434301,0.9523026462,G,B,G,B,B,Y
+Nick,WTC2_1.fq.gz,20407694,19434301,0.9523026462,G,B,G,B,B,Y
+Nick,WTC2_2.fq.gz,20407694,19434301,0.9523026462,G,B,G,B,B,Y
+Matthew,WTA2_1.fq.gz,21972519,21012870,0.9563250349,G,B,G,B,B,Y
+Matthew,WTA2_2.fq.gz,21972519,21012870,0.9563250349,G,B,G,B,B,Y
+Ethan,WTA1_1.fq.gz,21098941,20171629,0.9560493581,G,B,G,B,B,Y
+Ethan,WTA1_2.fq.gz,21098941,20171629,0.9560493581,G,B,G,B,B,Y
+Danielle,WTC1_1.fq.gz,20752795,19924384,0.9600819552,G,B,G,B,B,Y
+Danielle,WTC1_2.fq.gz,20752795,19924384,0.9600819552,G,B,G,B,B,Y
+Juliet,WTB2_1.fq.gz,20353936,19500738,0.9580819159,G,B,M,B,B,Y
+Juliet,WTB2_2.fq.gz,20353936,19500738,0.9580819159,G,B,M,B,B,Y
+Delfina,WTB1_1.fq.gz,20723512,19802180,0.9555417055,G,B,G,B,B,Y
+Delfina,WTB1_2.fq.gz,20723512,19802180,0.9555417055,G,B,G,B,B,Y
+Andrea ,WTB1_1.fq.gz,20723512,19873183,,,,,,,
+Andrea ,WTB1_2.fq.gz,20723512,19873183,,,,,,,
+Hadley,WTA2_1.fq.gz,"21,972,519",21012870,0.9563250349,G,B,G,B,B,Y
+Hadley,WTA2_2.fq.gz,"21,972,519",21012870,0.9563250349,G,B,G,B,B,Y
+Meghan,WTA1_1.fq.gz,"21,098,941",,0,,B,,B,G,Y
+Meghan,WTA1_2.fq.gz,"21,098,941",,0,,B,,B,G,Y
+Grace,WTA2_1.fq.gz,"21,972,519",21037734,0.9574566303,G,B,G,B,B,
+Grace,WTA2_2.fq.gz,"21,972,519",21037734,0.9574566303,G,B,G,B,B,Y
+Jack,WTC1_1.fq.gz,20752795,19901616,0.95898485,G,B,G,B,B,Y
+Jack,WTC1_2.fq.gz,20752795,19901616,0.95898485,G,B,G,B,B,Y
+James,WTB2_1.fq,20353936,19476343,0.9568833763,G,B,G,B,B,Y
+James,WTB2_2.fq,20353936,19476343,0.9568833763,G,B,G,B,B,Y
+Gio,WTB2_1.fq.gz,20353936,19476343,95.69%,B,B,G,B,B,N
+Gio,WTB2_2.fq.gz,20353936,19476343,95.69%,B,B,G,B,B,N
