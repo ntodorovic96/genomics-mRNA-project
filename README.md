@@ -53,4 +53,5 @@ The treatment conditions were very well separated based on PC2, with all of the 
 Following the filtering down of candidates based on a combination of p-score and fold change criteria, 13 DEGs were identified in thiamine-absent conditions. Interestingly, all 13 of these DEGs were upregulated in thiamine-absent conditions, indicated by the the positive log-fold change values. 
 
 # Gene Ontology Enrichment Analysis
-To identify the physiological role of the identified DEGs, the locus tags of each candidate were pulled from the R output table and used to parse the _C. Albicans_ reference GTF file downloaded earlier (GCF_000182965.3_ASM18296v3_genomic.gtf) for significant gene annotation information.
+To identify the physiological role of the identified DEGs and conduct a Gene Ontology (GO) enrichment analysis, the locus tags of each candidate were pulled from the R output table and used to parse the _C. Albicans_ reference GTF file downloaded earlier (GCF_000182965.3_ASM18296v3_genomic.gtf) for significant gene annotation information.
+
