@@ -47,5 +47,10 @@ The pre-cleaning for genes that had at least ten reads across samples resulted i
 Using these candidate genes and their expression levels, each biological replicate and treatment group was separated based on two principle components. Principle Component 1 (PC1) accounted for 88% of the observed variance, while Principle Component 2 (PC2) accounted for 9% of the observed variance, leaving only 3% of the variance unaccounted for on the PCA plot. 
 
 The treatment conditions were very well separated based on PC2, with all of the thiamine-absent samples scoring very low at a -10, while all of the thiamine-present samples all scored highly around a +10, indicating some differential expression of genes based on the conditions of thiamine in the environment. On the other hand, PC1 separated all of the biological replicates, with two scoring high in each experimental group and one scoring low. 
+
 <img width="416" alt="Screenshot 2024-12-08 180736" src="https://github.com/user-attachments/assets/ca572482-924b-4525-879b-b48b2d71f768">
-Following the filtering down of candidates based on a combination of p-score and fold change criteria, 13 DEGs were identified in thiamine-absent conditions. 
+
+Following the filtering down of candidates based on a combination of p-score and fold change criteria, 13 DEGs were identified in thiamine-absent conditions. Interestingly, all 13 of these DEGs were upregulated in thiamine-absent conditions, indicated by the the positive log-fold change values. 
+
+# Gene Ontology Analysis
+
