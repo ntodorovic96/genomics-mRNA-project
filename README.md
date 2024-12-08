@@ -37,3 +37,8 @@ Finally, the SAM file was converted into a binary alignment map (BAM) file WTC2.
 After mapping the reads to a BAM file with a reference genome, the python program HTSeq was used to count the reads. To begin, a Conda virtual environment (VE) was set up with all of the dependencies and necessary packages to run HTSeq (main/additional-commands/create-conda). Subsequently, HTSeq was run in the conda VE, using the WTC2.srt.bam sorted BAM file, and GCF_000182965.3_ASM18296v3_genomic.gtf GTF file as inputs (main/scripts/htseq.SBATCH). The generated output file was the text file WTC2_htseq-count.txt.
 
 # Differential Expression Analysis
+All of the 6 HTseq read count files from each biological replicate in thiamine-present and thiamine absent conditions (WTA2_htseqCount, WTB2_htseqCount, WTC2_htseqCount, WTA1_htseqCount, WTB1_htseqCount, WTC1_htseqCount) were then inputted into a DESeq R script (main/scripts/DESeq_script.R).
+
+DESeq made a dataset from all the HTseq count data and filtered for the relevant genes with more than 10 reads across samples. The reference condition to base the fold change in the differential expression analysis was set to the thiamine-present condition, and each experimental group and replicate was separated based on two principle components into a principle component analysis (PCA) plot. Finally, the data was filtered down further to a set of differentially expressed genes with at least 2-fold increase in expression and an adjusted p-value of less than 0.05. These genes were then graphed on a volcano plot. 
+
+# Results
