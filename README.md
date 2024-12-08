@@ -53,4 +53,4 @@ The treatment conditions were very well separated based on PC2, with all of the 
 Following the filtering down of candidates based on a combination of p-score and fold change criteria, 13 DEGs were identified in thiamine-absent conditions. Interestingly, all 13 of these DEGs were upregulated in thiamine-absent conditions, indicated by the the positive log-fold change values. 
 
 # Gene Ontology Analysis
-
+To identify the physiological role of the identified DEGs, the locus tags of each candidate were pulled from the R output table and used to parse 
