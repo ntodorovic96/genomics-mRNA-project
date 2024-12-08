@@ -1,1 +1,1 @@
-samtools view -S -b sample.sam > sample.bam
+samtools view -S -b WTC2.sam > WTC2.bam
