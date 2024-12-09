@@ -57,3 +57,8 @@ To identify the physiological role of the identified DEGs, the locus tags of eac
 
 <img width="629" alt="Screenshot 2024-12-08 223836" src="https://github.com/user-attachments/assets/0abd7945-37d9-4c60-9574-8f526562e75d">
 
+To better interpret the DEGs in the context of one another and identify the biological processes that these genes are overarchingly involved in, a Gene Ontology (GO) Enrichment Analysis was then conducted. Results were only displayed for a False Discovery Rate (FDR) of P < 0.05 using a Fischer's Exact Test.
+
+<img width="392" alt="Screenshot 2024-12-08 224511" src="https://github.com/user-attachments/assets/15b35422-ad3b-45a6-a291-60bfbe20a341">
+
+
