@@ -61,11 +61,13 @@ To identify the physiological role of the identified DEGs, the locus tags of eac
 
 <img width="629" alt="Screenshot 2024-12-08 223836" src="https://github.com/user-attachments/assets/0abd7945-37d9-4c60-9574-8f526562e75d">
 
-**Table 1. Description and Physiological Function of Significant Differentially Expressed Genes** 
+**Table 1. Description and Physiological Function of Significant Differentially Expressed Genes** Significant DEGs were identified from the DESeq R script and parsed through a _C. Albicans_ annotation file to extract db_xref qualifiers. Qualifiers were then used to search for description and function on the Candida Genome Database. 
 
 To better interpret the DEGs in the context of one another and identify the biological processes that these genes are overarchingly involved in, a Gene Ontology (GO) Enrichment Analysis was then conducted. Results were only displayed for a False Discovery Rate (FDR) of P < 0.05 using a Fischer's Exact Test.
 
 <img width="392" alt="Screenshot 2024-12-08 224511" src="https://github.com/user-attachments/assets/15b35422-ad3b-45a6-a291-60bfbe20a341">
+
+**Table 2. Gene Ontology Enrichment Analysis for Significant Differentially Expressed Genes** Db_xref qualifiers for the 13 significant DEGs were inputted into GO Consortium's Gene Ontology Resource and an enrichment analysis was conducted using the Biological Processes category against the _C. Albicans_ genome. The criteria for Enrichment was a False Discovery Rate (FDR) of P < 0.05 using a Fischer's Exact Test.
 
 Out of the 13 DEGs, 4 of them coded for proteins with an unknown function, 5 of them coded for proteins involved in the thiamine biosynthetic pathway, and 1 was identified as a putative thiamine transporter. This theme was further corroborated by the GO Enrichment Analysis, which saw an over 100 fold enrichment in thiamine biosynthetic process genes than expected due to chance. 
 
