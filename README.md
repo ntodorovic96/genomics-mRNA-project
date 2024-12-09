@@ -52,7 +52,7 @@ The treatment conditions were very well separated based on PC2, with all of the 
 
 Following the filtering down of candidates based on a combination of p-score and fold change criteria, 13 DEGs were identified in thiamine-absent conditions. Interestingly, all 13 of these DEGs were upregulated in thiamine-absent conditions, indicated by the the positive log-fold change values. 
 
-# Physiological Function of DEGs and Gene Ontology Analysis
+# Physiological Function of DEGs and Gene Ontology Enrichment Analysis
 To identify the physiological role of the identified DEGs, the locus tags of each candidate were pulled from the R output table and used to parse the _C. Albicans_ reference GTF file downloaded earlier (GCF_000182965.3_ASM18296v3_genomic.gtf) for significant gene annotation information, including the db_xref qualifier. These genes were then researched to identify physiological function and involvement in cellular processes on https://www.candidagenome.org/.
 
 <img width="629" alt="Screenshot 2024-12-08 223836" src="https://github.com/user-attachments/assets/0abd7945-37d9-4c60-9574-8f526562e75d">
@@ -61,4 +61,17 @@ To better interpret the DEGs in the context of one another and identify the biol
 
 <img width="392" alt="Screenshot 2024-12-08 224511" src="https://github.com/user-attachments/assets/15b35422-ad3b-45a6-a291-60bfbe20a341">
 
+Out of the 13 DEGs, 4 of them coded for proteins with an unknown function, 5 of them coded for proteins involved in the thiamine biosynthetic pathway, and 1 was identified as a putative thiamine transporter. This theme was further corroborated by the GO Enrichment Analysis, which saw an over 100 fold enrichment in thiamine biosynthetic process genes than expected due to chance. 
 
+Apart from the upregulation of proteins involved in the biosynthesis of thiamine, there was also over a 100 fold enrichment in pyridoxine, or vitamin B6, biosynthetic pathway genes and pyridoxine phosphate synthesis pathways. There was also a slight 10-fold enrichment in ergosterol biosynthetic process genes. Ergosterol is a sterol found in the cell membrane of fungi that serves many of the same functions as cholesterol in animal cells. 
+
+Interestingly, even though it was not mentioned in the GO enrichment analysis, many of the descriptions of the DEGs were thought to be involved in the formation of biofilm.
+
+# Biological Interpretation and Conclusion
+Our data indicates that the main way that _C. Albicans_ responds to the absence of thiamine is primarily through upregulating genes involved in the biosynthesis of endogenous thiamine and the upregulation of proteins that transport thiamine from the extracellular matrix into the cytosol. This is a very logical cellular response to compensate to maintain necessary nutrients, even when absent from the environment. 
+
+What is not abundantly clear still is why _C. Albicans_ upregulates genes involved in vitamin B6 synthesis as well as a membrane lipid in response to nutrient-deficient environments. It may be the case that the thiamine may act as a metabolic precursor in other biochemical reactions, or simply that a lack in one vitamin causes the upregulation of others globally. 
+
+Throughout all of this, our question still remains whether nutrient-deficient environments induce or contribute to the pathogenic transition of yeast. The most interesting observation from the results of the DEG characterization is that the upregulated proteins are involved in the formation of biofilm, a layer of microorganisms that grows and sticks on a surface. It has previously been observed that the formation of biofilms may be a major factor in pathogenesis, however the mechanism by which this happens still remains quite elusive. Taken in context, our results seem to indicate that nutrient-deficient environments may contribute to the pathogenic transition by upregulating genes associated with the production of biofilm. The main limitation of this study is that it doesn't prove causality, but simply gives gene candidates that may be involved. 
+
+It would be interesting to see in future studies if an increase in biofilm is associated with certain nutrient-deficient environments, such as thiamine, or whether this is a survival phenomenon that occurs with all necessary nutrients. Thus, diet lacking in some of these necessary nutrient may contribute to some of the commensal yeast infections that we see.
