@@ -44,7 +44,7 @@ DESeq made a dataset from all the HTseq count data and filtered for the relevant
 # Results of DEG Analysis
 The pre-cleaning for genes that had at least ten reads across samples resulted in the identification of 6,072 potential gene candidates.
 ![TH-vTH+_pcaplot](https://github.com/user-attachments/assets/a82174d6-d051-4e7a-8a67-f4b7109a18d5)
-**Figure 1. Principle Component Analysis Plot for RNAseq read counts in Thiamine-present and Thiamine-absent biological samples.** 
+**Figure 1. Principle Component Analysis (PCA) Plot for RNAseq read counts in Thiamine-present and Thiamine-absent biological samples.** Reads from each sample were mapped to a _C. Albicans_ reference genome and counted using the HTseq python program. Genes with less than 10 reads were excluded from the analysis, and then separated into two principle components.
 
 Using these candidate genes and their expression levels, each biological replicate and treatment group was separated based on two principle components. Principle Component 1 (PC1) accounted for 88% of the observed variance, while Principle Component 2 (PC2) accounted for 9% of the observed variance, leaving only 3% of the variance unaccounted for on the PCA plot. 
 
@@ -52,7 +52,7 @@ The treatment conditions were very well separated based on PC2, with all of the 
 
 <img width="416" alt="Screenshot 2024-12-08 180736" src="https://github.com/user-attachments/assets/ca572482-924b-4525-879b-b48b2d71f768">
 
-**Figure 2. Volcano plot of significant Differentially Expressed Genes in Thiamine-Absent Conditions.** Significant was defined as having a log-fold change value greater than 1 and an adjusted p-value less than 0.05.
+**Figure 2. Volcano Plot of Significant Differentially Expressed Genes in Thiamine-Absent Conditions.** Significant was defined as having a log-fold change value greater than 1 and an adjusted p-value less than 0.05. 6,072 gene candidates were assessed.
 
 Following the filtering down of candidates based on a combination of p-score and fold change criteria, 13 DEGs were identified in thiamine-absent conditions. Interestingly, all 13 of these DEGs were upregulated in thiamine-absent conditions, indicated by the the positive log-fold change values. 
 
@@ -60,6 +60,8 @@ Following the filtering down of candidates based on a combination of p-score and
 To identify the physiological role of the identified DEGs, the locus tags of each candidate were pulled from the R output table and used to parse the _C. Albicans_ reference GTF file downloaded earlier (GCF_000182965.3_ASM18296v3_genomic.gtf) for significant gene annotation information, including the db_xref qualifier. These genes were then researched to identify physiological function and involvement in cellular processes on https://www.candidagenome.org/.
 
 <img width="629" alt="Screenshot 2024-12-08 223836" src="https://github.com/user-attachments/assets/0abd7945-37d9-4c60-9574-8f526562e75d">
+
+**Table 1. Description and Physiological Function of Significant Differentially Expressed Genes** 
 
 To better interpret the DEGs in the context of one another and identify the biological processes that these genes are overarchingly involved in, a Gene Ontology (GO) Enrichment Analysis was then conducted. Results were only displayed for a False Discovery Rate (FDR) of P < 0.05 using a Fischer's Exact Test.
 
